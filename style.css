@@ -1,0 +1,348 @@
+article, aside, figure, 
+footer, header, menu, nav, section {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+body, h1, h2, h3, h4, li, ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+  
+    max-width: 1589px;
+    min-width: 320px;
+    font-family: Calibri, Tahoma, Arial;
+    font-size: 100%;
+    padding-top: 3em;
+    
+}
+
+#wrapper{
+    
+}
+
+nav{
+    background-color: #3b3b3b;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    
+    
+}
+
+nav ul{
+    list-style-type: none;
+    padding: .4em;
+    display: flex; 
+}
+
+.logo{
+    padding-top: .032em;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    
+}
+
+nav li{
+      
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+#wrapper{
+    width: 80%;  
+    margin: 2em auto;
+}
+
+
+.firstHeading{
+    font-size: 120%;
+    padding-bottom: 1em;
+    
+}
+
+.firstHeading h1{
+    font-weight: 500;
+}
+
+small{
+    font-weight: 300;
+}
+
+
+
+section{
+    width: 58.9%;
+    float: left;
+    margin-right: 4%;
+}
+
+img{
+    border-top-right-radius: .32em;
+    border-top-left-radius: .32em;  
+    /*border-radius: 5px;*/
+    margin-bottom: -5px;
+    max-width: 100%;
+}
+
+
+article{
+    border-left: 1px solid #c0c5ce;
+    border-right: 1px solid #c0c5ce;
+    /*border-bottom: 1px solid #c0c5ce;*/
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 1.25em;
+    /*padding: 1em;*/
+}
+
+
+
+article h1{
+    font-size: 2em;
+}
+
+
+
+.blueButton{
+    color: white;
+    background-color: #3579DC;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px; 
+    width: 112px;
+}
+
+.blueButton a{
+    text-decoration: none;
+    color: white;
+}
+
+.blueButton:hover{
+    background-color: #4169E1;
+}
+
+
+/*test*/
+.bottomArticleBit{
+    background-color: #f1f1f1;
+    border: 1px solid #c0c5ce;
+    border-bottom-left-radius: .32em;
+    border-bottom-right-radius: .32em;
+    margin-bottom: 1.25em;
+    margin-top: -1.25em;
+}
+
+
+.bottomArticleBit p{
+    color: grey;
+    padding: 0em 0em 0em 1.25em;
+}
+
+
+.bottomArticleBit a{
+    color: #62B1F6;
+    text-decoration: none;
+    font-size: 115%;
+
+
+}
+
+.bottomArticleBit a:hover{
+    color: #36648B;
+   text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+aside{
+    width: 31.1%;
+    float: left;
+    margin-right: 6%; /*left over percentage, might add more if 31.1% dont look good*/
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+
+}
+
+aside div ul:nth-child(2){
+    width: 50%;
+    float: left;
+}
+
+aside ul{
+    list-style-type: none;
+    padding-top: 1em;
+    padding-left: .5em;
+    box-sizing: border-box;
+}
+
+
+
+aside a{
+    color: #62B1F6;
+    text-decoration: none;
+    font-size: 115%;
+}
+
+aside a:hover{
+    color: #36648B;
+   text-decoration: underline;
+}
+
+
+.paddingForThirdAside{
+    padding: .25em 1em 1em 1em;
+    line-height: 1.5;
+}
+
+
+
+
+.searchBar{
+    padding: .6250em;
+    margin-top: 1.875em;
+    margin-bottom: 1.875em;
+    margin-left: 1.25em;
+}
+
+.goSubmit{
+    padding: .6250em;
+    margin-top: 1.875em;
+    margin-bottom: 1.875em;
+    color: white;
+    background-color: #808080;
+    border: 5px solid  #d3d3d3;
+    border-top-right-radius: .32em;
+    border-bottom-right-radius: .32em;  
+   
+}
+
+.goSubmit:hover{
+    background-color: #666666;
+}
+
+
+.asideStyling{
+    border: 1px solid #c0c5ce;
+    border-top-right-radius: .32em;
+    border-top-left-radius: .32em; 
+    margin-bottom: 20px;
+}
+
+
+
+
+.titleAside{
+    background-color:  #f1f1f1;
+}
+
+.titleAside h3{
+    margin-left: 1em;
+    padding: .6em;
+    font-size: 150%;
+}
+
+
+
+footer{
+    background-color: #3b3b3b;
+    display: flex;
+    clear: both;
+    color: white;
+    justify-content: center
+    
+}
+
+footer p{
+    padding: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media query time!!!!!! START*/
+
+/*First Media Query START*/
+@media only screen and (max-width: 1199px){
+    #wrapper{
+        width: 80%;
+        margin: auto;
+    }
+}
+/*First Media Query END*/
+
+/*second  Media START*/
+@media only screen and (max-width: 991px){
+    nav ul{
+        display: none;
+    }/*Burger menu Style, (unfortunately I dont have the skill yet, soon tho ;) )*/
+}
+/*second Media END*/
+
+
+/*FIX SEARCH BAR LEAKING OUT OF CONTAINER START*/
+@media only screen and (max-width 1071px){
+
+}
+/*FIX SEARCH BAR LEAKING OUT OF CONTAINER START*/
+
+
+
+/*Third Media START*/
+@media only screen and (max-width: 768px){
+    
+    section{
+        width: 100%;
+ 
+    }
+    
+    
+    
+    
+    
+    aside{
+        width: 100%;    
+    }
+*Third Media END*/
+
+
+
+
+
+/*Media query time!!!!!! END*/
+
